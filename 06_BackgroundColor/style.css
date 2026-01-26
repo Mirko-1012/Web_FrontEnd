@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.shape{
+    width: 256px;
+    height: 256px;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 16px;
+    margin: 8px;
+}
+
+.class-1{
+    background-color: red;
+}
+
+.class-2{
+    background-color: green;
+}
+
+@media (min-width: 768px) {
+    .class-1{
+        background-color: orange;
+    }
+
+    .class-2{
+        background-color: yellow;
+    }
+}
+
+@media (min-width: 1024px) {
+    .class-1{
+        background-color: blue;
+    }
+
+    .class-2{
+        background-color: violet;
+    }
+}
