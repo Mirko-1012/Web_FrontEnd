@@ -1,0 +1,36 @@
+body {
+    margin-top: 200px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;*/
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    color: black;
+    font-size: 75px;
+}
+
+.search_bar {
+    width: 1000px;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.search_button {
+    background-color: lightgrey;
+    height: 30px;  
+    border-radius: 5px;    
+    margin-right: 10px;
+}
+
+.lucky_button {
+    background-color: lightgrey;
+    height: 30px;  
+    border-radius: 5px;
+}

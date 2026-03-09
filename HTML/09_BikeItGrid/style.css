@@ -1,0 +1,39 @@
+.box-image-1 {
+    width: 1024px;
+    height: 512px;
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image-1{
+    background-color: red;
+    grid-row: span 2;
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+.image-2{
+    background-color: blue;
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+.image-3{
+    background-color: yellow;
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+.image-4{
+    background-color: green;
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+.image-5{
+    background-color: violet;
+    border-radius: 20px;   
+    border: 2px solid;
+}
