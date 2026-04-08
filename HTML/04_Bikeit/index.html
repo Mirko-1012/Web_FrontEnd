@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bikeit</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header_inner">
+            <a href="#"><img class="header_logo" src="assets/logos.png" alt="Bikeit"></a>
+            <nav class="navbar">
+                <a href="#">Itinerari</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Consigli di Viaggio</a>
+                <a href="#">Contattaci</a>
+            </nav>
+            <div class="header_right">
+                <a href="#" class="account_btn" title="Account">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                    </svg>
+                </a>
+                <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile_menu" id="mobileMenu">
+            <a href="#">Itinerari</a>
+            <a href="#">Gift Card</a>
+            <a href="#">Consigli di Viaggio</a>
+            <a href="#">Contattaci</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="container_1">
+        <div class="title">
+            <h1>UN NUOVO MODO DI VIAGGIARE IN BICI</h1>
+            <p1>
+                Seleziona il tuo viaggio in bici tra una vasta scelta di itinerari
+                da un'unica piattaforma online
+            </p1>
+            <div class="hero_cta">
+                <a href="#" class="btn_primary">Scopri gli itinerari</a>
+                <a href="#" class="btn_secondary">Come funziona</a>
+            </div>
+        </div>
+        <div class="image_1">
+            <img src="assets/home_hero.png" alt="Bike" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="search_bar_wrapper">
+        <div class="search_bar">
+            <div class="search_field" onclick="this.querySelector('input').focus()">
+                <label>Destinazione</label>
+                <input type="text" placeholder="Dove vuoi andare?">
+            </div>
+            <div class="search_divider"></div>
+            <div class="search_field" onclick="this.querySelector('input').focus()">
+                <label>Periodo</label>
+                <input type="text" placeholder="Aggiungi date">
+            </div>
+            <div class="search_divider"></div>
+            <div class="search_field" onclick="this.querySelector('input').focus()">
+                <label>Ospiti</label>
+                <input type="text" placeholder="Aggiungi ospiti">
+            </div>
+            <button class="search_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <span>Cerca</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- COS'E' BIKEIT -->
+    <div class="container_2">
+        <div class="title_2">
+            <h2>Cos'è Bikeit?</h2>
+            <p2>
+                Bikeit nasce dall'esperienza di Snowit, tour operator digitale leader
+                in Europa per l'organizzazione di viaggi in montagna. Bikeit punta a
+                rivoluzionare il settore del cicloturismo. Una piattaforma semplice e veloce che centralizza i migliori itinerari al mondo da percorrere in bici
+            </p2>
+        </div>
+        <div class="select_1">
+            <div class="select">Itinerari in giro per il mondo</div>
+            <div class="select">Preferenze self-guided e guided</div>
+            <div class="select">Alloggi bike-friendly</div>
+            <div class="select">Viaggia senza pensieri</div>
+            <div class="select">Prenota con un click</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- COME FUNZIONA -->
+    <div class="container_3">
+        <h1 class="title_3">Come Funziona</h1>
+        <div class="functions">
+            <div class="function">
+                <span>01</span>
+                <div>
+                    <h3>Confronta gli itinerari</h3>
+                    <p>Seleziona la destinazione e trova l'itinerario più conforme al tuo livello. Potrai scegliere tra una vasta proposta di viaggi in tutto il mondo.</p>
+                </div>
+            </div>
+            <div class="function">
+                <span>02</span>
+                <div>
+                    <h3>Scegli la tua avventura</h3>
+                    <p>Una volta trovato l'itinerario ideale, consulta la scheda prodotto con tutte le caratteristiche e specifiche del tuo viaggio.</p>
+                </div>
+            </div>
+            <div class="function">
+                <span>03</span>
+                <div>
+                    <h3>Seleziona la tua bicicletta</h3>
+                    <p>Nella personalizzazione del tuo pacchetto, potrai includere il noleggio della bici o scegliere di portare il tuo mezzo.</p>
+                </div>
+            </div>
+            <div class="function">
+                <span>04</span>
+                <div>
+                    <h3>Salta in sella</h3>
+                    <p>Completa l'ordine e preparati per la tua prossima avventura. Dovrai solo goderti il viaggio, al resto ci pensa Bikeit!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- DESTINAZIONI -->
+    <div class="container_5">
+        <h1 class="title_5">Destinazioni in evidenza</h1>
+        <p class="subtitle_5">Scopri i nostri itinerari più amati in tutto il mondo</p>
+        <div class="destinations">
+            <div class="destination_card">
+                <div class="dest_img" style="background: linear-gradient(135deg, #4a9e6b, #2d7a4f);"></div>
+                <div class="dest_info">
+                    <span class="dest_tag">Self-guided</span>
+                    <h3>Dolomiti in bici</h3>
+                    <p>7 giorni · Difficoltà media</p>
+                    <div class="dest_price">Da <strong>890</strong></div>
+                </div>
+            </div>
+            <div class="destination_card">
+                <div class="dest_img" style="background: linear-gradient(135deg, #e07b39, #c05a1a);"></div>
+                <div class="dest_info">
+                    <span class="dest_tag">Guided</span>
+                    <h3>Toscana in bici</h3>
+                    <p>5 giorni · Difficoltà facile</p>
+                    <div class="dest_price">Da <strong>750</strong></div>
+                </div>
+            </div>
+            <div class="destination_card">
+                <div class="dest_img" style="background: linear-gradient(135deg, #3a7bbf, #1a5a9e);"></div>
+                <div class="dest_info">
+                    <span class="dest_tag">Self-guided</span>
+                    <h3>Marocco Adventure</h3>
+                    <p>10 giorni · Difficoltà alta</p>
+                    <div class="dest_price">Da <strong>1.290</strong></div>
+                </div>
+            </div>
+            <div class="destination_card">
+                <div class="dest_img" style="background: linear-gradient(135deg, #7b5ea7, #5a3a8a);"></div>
+                <div class="dest_info">
+                    <span class="dest_tag">Guided</span>
+                    <h3>Langhe e Monferrato</h3>
+                    <p>3 giorni · Difficoltà facile</p>
+                    <div class="dest_price">Da <strong>420</strong></div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top: 40px;">
+            <a href="#" class="btn_primary">Vedi tutti gli itinerari</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- GUIDA E SUGGERIMENTI -->
+    <div class="container_4">
+        <h1 class="title_4">Guida e suggerimenti</h1>
+        <div class="allguide">
+            <div class="guide">
+                <h3>Portapacchi bici: quale scegliere per il tuo viaggio in bicicletta</h3>
+                <p>Portapacchi per bici: un accessorio leggero e versatile per guidare comodamente trasportando i tuoi...</p>
+            </div>
+            <div class="guide">
+                <h3>Austria in bici: esperienze indimenticabili su due ruote</h3>
+                <p>Ti piacerebbe affrontare un tour in Austria in bici? Sei curioso di scoprire i paesaggi montani e il...</p>
+            </div>
+            <div class="guide">
+                <h3>Vacanze in bicicletta organizzate: pianificazione su due ruote</h3>
+                <p>Vivi le tue prossime vacanze in bicicletta organizzate con Bikeit. Scopri itinerari affascinanti in...</p>
+            </div>
+            <div class="guide">
+                <h3>Come allenarsi per un viaggio in bici: consigli per l'allenamento</h3>
+                <p>Vorresti sapere come allenarsi per il prossimo viaggio in bici? Leggi questo articolo per scoprire i...</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- LOGHI PARTNER -->
+    <div class="logos">
+        <img src="assets/sciare.png" alt="Sciare">
+        <img src="assets/gv.png" alt="Guida Viaggi">
+        <img src="assets/travelnostop.png" alt="TNS">
+        <img src="assets/hm.png" alt="Hipmiller">
+        <img src="assets/bike.png" alt="Bike">
+    </div>
+
+    <hr>
+
+    <!-- RECENSIONI -->
+    <div class="reviews">
+        <div class="review">
+            <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+            <h3>Weekend lungo nelle Langhe stupendo, lo consiglio a tutti coloro che vogliono farsi un po' di bici ma allo stesso tempo godersi il territorio tra degustazioni, spa e relax. Ho sempre desiderato fare un viaggio in bici ma non avevo mai trovato una piattaforma che mi aiutasse ad organizzarlo. Bikeit ha tutto il necessario: percorso, alloggio, noleggio bici ed esperienze sul territorio!</h3>
+            <p>Evelin - 10 marzo 2023</p>
+        </div>
+        <div class="review">
+            <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+            <h3>Non avevo mai fatto un viaggio in bici prima d'ora. Bikeit mi ha dato questa opportunità ed è stato tutto perfetto anche per un principiante come me, organizzazione top, tutti i servizi descritti e messi a disposizione sono stati ottimi, sia l'hotel che le bici! Consiglio sicuramente anche per le famiglie.</h3>
+            <p>Luca - 25 marzo 2023</p>
+        </div>
+        <div class="review">
+            <p>&#11088;&#11088;&#11088;&#11088;</p>
+            <h3>Quale utente di snowit da tempo, ho voluto subito testare bikeit e sono rimasto davvero molto soddisfatto per la semplicità nella prenotazione per l'intero soggiorno. Alloggio, noleggio bici ed itinerario consigliato. Un'esperienza di prenotazione completa a 360°.</h3>
+            <p>Tommaso - 10 marzo 2023</p>
+        </div>
+        <div class="review">
+            <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+            <h3>Tutto organizzato alla perfezione! Avevamo già fatto qualche viaggio in bici con altri tour operator ma l'esperienza fatta con Bikeit è stata sicuramente la più memorabile. In un paio di click abbiamo prenotato il nostro itinerari e le nostre bici. Una volta raggiunto l'hotel abbiamo solo pensato a pedalare e a goderci la nostra vacanza!</h3>
+            <p>Marco - 6 marzo 2023</p>
+        </div>
+        <div class="review">
+            <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+            <h3>Pedalate pazzesche in Marocco! Bici nuove di pacca e super attrezzate, consiglio a tutti coloro che vogliono godersi un viaggio all'insegna dell'avventura e della bici!</h3>
+            <p>Mirko - 11 marzo 2023</p>
+        </div>
+        <div class="review">
+            <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+            <h3>Fantastica esperienza tra i vigneti! Ottima organizzazione e scelta delle strutture, da ripetere!</h3>
+            <p>Alberto - 11 marzo 2023</p>
+        </div>
+        <div class="review">
+            <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+            <h3>Siamo andati un Weekend ad Alba con tutta la famiglia, 2 bambini tra i 10 e 12 anni e 2 adulti. La possibilità di noleggiare le biciclette per i bambini è stata rapida e i servizi in loco erano adeguati alle nostre esigenze. Di grande supporto l'assistenza Bikeit anche durante tutto il weekend. Consigliato alle famiglie con bambini piccoli.</h3>
+            <p>Claudio - 27 agosto 2022</p>
+        </div>
+        <div class="review">
+            <p>&#11088;&#11088;&#11088;&#11088;</p>
+            <h3>prenotare è stato semplicissimo, assistenza chiara e molto veloce nel rispondere, durante il viaggio è filato tutto liscio.</h3>
+            <p>Fabio - 27 marzo 2023</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter_banner">
+        <div class="newsletter_content">
+            <h2>Non perdere le ultime novità</h2>
+            <p>Iscriviti alla newsletter e ricevi in anteprima i nuovi itinerari, offerte esclusive e consigli di viaggio</p>
+            <div class="newsletter_form">
+                <input type="email" placeholder="La tua email" class="newsletter_input">
+                <button class="btn_primary" onclick="this.textContent='Iscritto \u2713'; this.style.background='#4a9e6b';">Iscriviti</button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_col">
+                <img src="assets/logos.png" alt="Bikeit" class="footer_logo">
+                <p class="footer_desc">Bikeit è la piattaforma digitale per organizzare il tuo prossimo viaggio in bici. Itinerari, alloggi e noleggio bici in un unico posto.</p>
+                <div class="social_links">
+                    <a href="#" class="social_link">&#128216;</a>
+                    <a href="#" class="social_link">&#128247;</a>
+                    <a href="#" class="social_link">&#128140;</a>
+                </div>
+            </div>
+            <div class="footer_col">
+                <h4>Esplora</h4>
+                <ul>
+                    <li><a href="#">Tutti gli itinerari</a></li>
+                    <li><a href="#">Self-guided</a></li>
+                    <li><a href="#">Guided</a></li>
+                    <li><a href="#">E-bike</a></li>
+                    <li><a href="#">Gravel</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Informazioni</h4>
+                <ul>
+                    <li><a href="#">Chi siamo</a></li>
+                    <li><a href="#">Come funziona</a></li>
+                    <li><a href="#">Gift Card</a></li>
+                    <li><a href="#">Blog &amp; Consigli</a></li>
+                    <li><a href="#">Diventa partner</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Supporto</h4>
+                <ul>
+                    <li><a href="#">Contattaci</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Politica di cancellazione</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Termini e condizioni</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; 2024 Bikeit S.r.l. &mdash; P.IVA 12345678901 &mdash; Tutti i diritti riservati</p>
+            <p>Un prodotto di <a href="#">Snowit</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+        }
+    </script>
+
+</body>
+</html>

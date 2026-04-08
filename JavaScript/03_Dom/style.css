@@ -1,0 +1,16 @@
+.bold{
+    font-weight: bold;
+}
+
+.blue{
+    color: blue;
+}
+
+h1 ~ p{
+    color: red;
+}
+
+h2 ~ p{
+    color: green;
+}
+

@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #c2185b;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.navbar 
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.navbar nav a:hover {
+    color: lightgray;
+}
+
+.team {
+    max-width: 1200px;
+    margin: 120px auto 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.team-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.team-tabs p {
+    margin: 0;
+    color: #c2185b;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.team-tabs p:hover {
+    color: white;
+    background-color: #c2185b;
+    border-radius: 5px;
+}
+
+.team-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    width: 200px;
+    height: 250px;
+}
+
+.card:hover {
+    box-shadow: 0 2px 2px gray;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.ava0{
+    background-color: #FFCAB1;
+}
+
+.ava1{
+    background-color: #ECDCB0;
+}
+
+.ava2{
+    background-color: #C1D7AE;
+}
+
+.ava3{
+    background-color: #8CC084;
+}
+
+.ava4{
+    background-color: #968E85;
+}
+
+.ava5{
+    background-color: #4c4845;
+}
+
+.ava6{
+    background-color: #1b1b1a;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 20px;
+}

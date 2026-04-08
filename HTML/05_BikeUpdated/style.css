@@ -1,0 +1,379 @@
+    body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    display: flex;
+    justify-content: right;
+    width: auto;
+    background-color: lightgrey;
+    text-align: center;
+    height: 50px;
+    border: 1px solid gray;
+}
+
+.navbar_1{
+    padding-top: 15px;
+    padding-right: 100px;
+}
+
+a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+}
+
+.logo{
+    padding-top: 25px;
+    padding-left: 100px;
+    height: 100px;
+    width: auto;
+}
+
+.container_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.title{
+    font-size: 36px;
+    font-family: arial;
+    line-height: 1;
+    max-width: 600px;
+}
+
+p1{
+    font-size: 25px;
+    color: gray;
+    line-height: 1;
+}
+
+.image_1{
+    display: flex;
+    width: 550px;
+    height: 550px;
+}
+
+hr {
+    width: 90%;
+    border:solid lightgray 1px;
+}
+
+.container_2{
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    gap: 75px;
+    padding-right: 100px;
+
+}
+
+.title_2{
+    max-width: 600px;
+    font-size: 19px;
+    font-family: arial;
+}
+
+.select_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    gap: 20px;
+    font-family: arial;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+.select{
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.container_3{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_3{
+    font-size: 36px;
+    font-family: arial;
+    flex-direction: column;
+    line-height: 1;
+    text-align: center;
+}
+    
+.functions{
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    gap: 80px;
+}
+
+.function{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: arial;
+}
+
+.function span{
+    font-size: 48px;
+    color: gray;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.function h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.function p{
+    font-size: 18px;
+    color: black;
+}
+
+.container_4{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.title_4{
+    font-size: 36px;
+    font-family: arial;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.allguide{
+    display: flex;
+    gap: 70px;
+    flex-direction: row;
+}
+
+.guide{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    font-family: arial;
+}
+
+.guide h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.guide p{
+    font-size: 14px;
+    color: black;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logos img{
+    height: 50px;              
+    width: auto;
+    filter: grayscale(100%) brightness(0.8);
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.logos img:hover{
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+}
+
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+.review{
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 260px;
+    font-family: Arial;
+}
+
+
+@media(max-width: 1024px){
+    .container_1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .title{
+        font-size: 36px;
+        font-family: arial;
+        line-height: 1;
+        max-width: 1024px;
+    }
+
+    p1{
+        font-size: 25px;
+        color: gray;
+        line-height: 1;
+    }
+
+    .image_1{
+        display: none;
+        width: 550px;
+        height: 550px;
+    }
+}
+
+
+@media(max-width: 1024px){
+    .container_2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        gap: 75px;
+        align-items: flex-start;
+    }
+
+    .title_2{
+        max-width: 600px;
+        font-size: 19px;
+        font-family: arial;
+    }
+
+    .select_1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 24px;
+        gap: 20px;
+        font-family: arial;
+        padding-bottom: 100px;
+        width: 100%;
+    }
+
+    .select{
+        border-radius: 20px;
+        border: 1px solid lightgrey;
+        padding: 20px;
+        font-weight: bold;
+    }
+}
+
+
+@media (max-width: 1024px){
+
+    .container_3{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title_3{
+        font-size: 28px;
+        font-family: arial;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .functions{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .function{
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .function span{
+        font-size: 54px;
+        margin-bottom: 0;
+    }
+}
+
+
+@media (max-width: 1024px){
+    .container_4{
+        margin-top: 75px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .title_4{
+        font-size: 36px;
+        font-family: arial;
+        flex-direction: column;
+        line-height: 1;
+    }
+
+    .allguide{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .guide{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        font-family: arial;
+    }
+
+    .guide h3{
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+
+    .guide p{
+        font-size: 14px;
+        color: black;
+    }
+}
